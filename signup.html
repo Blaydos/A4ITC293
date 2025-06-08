@@ -1,0 +1,44 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup - Solar Panel Newsletter</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script src="js/signup.js" defer></script>
+</head>
+<body onload="welcomeMessage()">
+    <main>
+        <h1>SolarNova Energy Ltd. - Newsletter Signup</h1>
+        <form action="http://csusap.csu.edu.au/cgi-bin/echo_form" method="post" onsubmit="return validateForm()">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label>First Name*: <input type="text" name="firstName" id="firstName" maxlength="60"></label><br><br>
+                <label>Last Name*: <input type="text" name="lastName" id="lastName" maxlength="60"></label><br><br>
+                <label>Email Address*: <input type="email" name="email" maxlength="60" required></label><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>How old are you?</legend>
+                <label><input type="radio" name="age" value="15-25">15-25</label>
+                <label><input type="radio" name="age" value="26-35">26-35</label>
+                <label><input type="radio" name="age" value="36-45">36-45</label>
+                <label><input type="radio" name="age" value="46-55">46-55</label>
+                <label><input type="radio" name="age" value="55+">55+</label>
+            </fieldset>
+            <fieldset>
+                <legend>Interested Areas</legend>
+                <label><input type="checkbox" name="area" value="Residential">Residential</label>
+                <label><input type="checkbox" name="area" value="Commercial">Commercial</label>
+                <label><input type="checkbox" name="area" value="Industrial">Industrial</label>
+                <label><input type="checkbox" name="area" value="Agricultural">Agricultural</label>
+                <label><input type="checkbox" name="area" value="Government">Government</label>
+            </fieldset>
+            <label>Additional Comments:<br>
+                <textarea name="comments" cols="60" rows="3"></textarea>
+            </label><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+</body>
+</html>
